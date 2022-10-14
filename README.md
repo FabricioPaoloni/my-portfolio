@@ -8,7 +8,7 @@ This is my portfolio made with HTML5, CSS3 &amp; JavaScript implementing BEM CSS
 * [Portfolio - personal web](http://fabriciopaoloni.com)
 
 ## Live example
-- [GitHub Page]()
+- [GitHub Page](https://fabriciopaoloni.github.io/my-portfolio/)
 
 ## Contact
 paolonifabricio@gmail.com
