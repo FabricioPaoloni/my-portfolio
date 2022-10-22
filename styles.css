@@ -263,17 +263,17 @@ body{
 }
 .about-me h2{
     width: 80%;
-    max-width: 800px;
+    max-width: 600px;
     padding: 2rem;
     padding-top: 6rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2rem;
     text-align: center;
     margin: auto;
 }
 .about-me p{
     width: 80%;
-    max-width: 800px;
+    max-width: 600px;
     text-align: justify;
     margin: auto;
     font-size: 1rem;
@@ -284,9 +284,15 @@ body{
     font-size: inherit;
     font-weight: bold;
 }
+.about-me__container{
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
 .about-me__lists{
     padding: 0;
-    max-width: 800px;
+    max-width: 600px;
     width: 80%;
     margin: auto;
     margin-top: 1rem;
@@ -308,22 +314,26 @@ body{
 }
 .about-me__left{
     padding: 1rem;
-    padding-right: 4rem;
+    margin: 0 auto 0 3rem;
     width: fit-content;
-    border-left: solid 2px var(--grey-circles);
+    max-width: calc(800px - 7rem);
 
-    background-color: var(--lighter);
+    /* border-left: solid 2px var(--grey-circles); */
+
+    /* background-color: var(--lighter); */
     border-top-right-radius: 3rem;
     border-bottom-right-radius: 3rem;
 }
+
 .about-me__right{
     padding: 1rem;
-    padding-left: 4rem;
-    margin: 0 0 0 auto;
+    margin: 0 3rem 0 auto;
     /* background-color: #00cdac; */
     width: fit-content;
-    border-right: solid 2px var(--grey-circles);
-    background-color: var(--lighter);
+    max-width: calc(800px - 2rem);
+
+    /* border-right: solid 2px var(--grey-circles); */
+    /* background-color: var(--lighter); */
     border-top-left-radius: 3rem;
     border-bottom-left-radius: 3rem;
 
@@ -332,27 +342,28 @@ body{
     display: flex;
     flex-direction: column;
     width: 80%;
-    max-width: 800px;
-    text-align: justify;
+    max-width: 600px;
+    text-align: center;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 .about-me__certifications h4{
     font-size: 2rem;
     line-height: 2rem;
-    margin: 0 0 2rem 0;
+    margin: 0 0 3rem 0;
 }
 .about-me__certifications a{
-    width: fit-content;
-    padding: 0.5rem;
-    margin: 0 0 1rem 0;
+    width: 400px;
+    padding: 1rem;
+    margin: 0 auto 1rem auto;
     /* margin-bottom: 0.5rem; */
     font-size: 1rem;
     line-height: 1rem;
+    
     text-decoration: none;
     color: var(--projects-color);
     background-color: var(--black);
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     transition-duration: 0.5s;
 }
 .about-me__certifications a:hover{
@@ -376,19 +387,19 @@ body{
     display: block;
 }
 
-.projects h3{
+.projects h2{
     position: inherit;
     z-index: 2;
     width: 80%;
-    max-width: 800px;
+    max-width: 600px;
     
     /* color: black; */
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2rem;
     text-align: center;
     
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     text-transform: uppercase;
 }
@@ -399,7 +410,7 @@ body{
 }   
 .projects__container{
     position: relative;
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
     z-index: 2;
     padding: 1rem;
@@ -412,7 +423,7 @@ body{
     position: relative;
     z-index: 2;
     display: none;
-    max-width: 800px;
+    max-width: 600px;
     border-radius: 20%;
     margin: auto;
     margin-bottom: 0px;
@@ -636,6 +647,19 @@ body{
     }
 }
 @media(max-width: 890px){
+    .about-me__lists{
+        
+        margin: 1rem auto auto auto;
+    }
+    .about-me__left, .about-me__right{
+        margin: 0;
+        width: 100%;
+        max-width: calc(100% - 2rem);
+    }
+    .about-me__certifications a{
+        width: 80%;
+        max-width: 400px;
+    }
     .projects__container{
         max-width: 80%;
     }
