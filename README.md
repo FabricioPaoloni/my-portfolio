@@ -4,7 +4,7 @@ This is my portfolio made with HTML5, CSS3 &amp; JavaScript implementing BEM CSS
 ## Author :pen: 
 **Fabricio Paoloni**
 
-* [LinkedIn]()
+* [LinkedIn](www.linkedin.com/in/fabriciopaoloni)
 * [Portfolio - personal web](http://fabriciopaoloni.com)
 
 ## Live example
