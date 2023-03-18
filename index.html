@@ -125,33 +125,49 @@
 
     <section id="projects" class="projects">
         <h2>My projects</h2>
-        <div id="projects__container" class="projects__container">
-            <a class="projects__project-tile" target="_blank" href="https://codepen.io/paolonif/full/QWmejNX">
-                <img id="project1" class="projects__images" title="Pomodoro Clock" src="./img/pomodoroClock.png">
-                <h4 class="projects__image-caption">Pomodoro Clock</h4>
-            </a>
-            <a class="projects__project-tile" target="_blank" href="https://codepen.io/paolonif/full/xxprNwE">
-                <img id="project2" class="projects__images" title="Markdown Previewer"
-                    src="./img/markdownPreviewer.png">
-                <h4 class="projects__image-caption">Markdown Previewer</h4>
-            </a>
-            <a class="projects__project-tile" target="_blank" href="https://codepen.io/paolonif/full/GRyebvm">
-                <img id="project3" class="projects__images" title="Calculator" src="./img/calculator.png">
-                <h4 class="projects__image-caption">Calculator</h4>
-            </a>
 
+        <article id="projects__container" class="projects__container">
+            <div id="projects__slider" class="projects__slider">
+                <a class="projects__slide" target="_blank" href="https://propiedadprotegida.com.ar">
+                    <h4 class="projects__image-title">Propiedad Protegida Web</h4>
+                    <img id="project-1" class="projects__images" title="Propiedad Protegida Web" src="./img/propiedadprotegida.png">
+                    <p class="projects__description">Web designed for Propiedad Protegida S.A.S. made with React</p>
+                </a>
+                <a class="projects__slide" target="_blank" href="https://codepen.io/paolonif/full/eYjawjV">
+                    <h4 class="projects__image-title">World Heat Map</h4>
+                    <img id="project-2" class="projects__images" title="World Heat Map" src="./img/heatmap.png">
+                    <p class="projects__description">Heat Map made with D3.js library</p>
+                </a>
+                <a class="projects__slide" target="_blank" href="https://codepen.io/paolonif/full/QWmejNX">
+                    <h4 class="projects__image-title">Pomodoro Clock</h4>
+                    <img id="project-3" class="projects__images" title="Pomodoro Clock" src="./img/pomodoroClock.png">
+                    <p class="projects__description">Pomodoro Clock project made with React</p>
+                </a>
+                <a class="projects__slide" target="_blank" href="https://codepen.io/paolonif/full/xxprNwE">
+                    <h4 class="projects__image-title">Markdown Previewer</h4>
+                    <img id="project-4" class="projects__images" title="Markdown Previewer"
+                        src="./img/markdownPreviewer.png">
+                        <p class="projects__description">MarkDown Previewer project made with React</p>
+                </a>
+                <a class="projects__slide" target="_blank" href="https://codepen.io/paolonif/full/GRyebvm">
+                    <h4 class="projects__image-title">Calculator</h4>
+                    <img id="project-5" class="projects__images" title="Calculator" src="./img/calculator.png">
+                    <p class="projects__description">Calculator project made with React</p>
+                </a>
+            </div>
             <!-- prev and next buttons  -->
             <button class="projects__prev-button" onclick={plusSlides(-1)}>&#10094;</button>
             <button class="projects__next-button" onclick="plusSlides(1)">&#10095;</button>
             <br>
             <!-- The dots/circles -->
-            <div style="text-align:center">
-                <button class="projects__dot" onclick="currentSlide(1)"></button>
-                <button class="projects__dot" onclick="currentSlide(2)"></button>
-                <button class="projects__dot" onclick={currentSlide(3)}></button>
-            </div>
-
-        </div>
+            <ul style="text-align:center">
+                <li class="projects__dot" onclick="currentSlide(0)"></li>
+                <li class="projects__dot" onclick="currentSlide(1)"></li>
+                <li class="projects__dot" onclick={currentSlide(2)}></li>
+                <li class="projects__dot" onclick="currentSlide(3)"></li>
+                <li class="projects__dot" onclick={currentSlide(4)}></li>
+            </ul>
+        </article>
 
         <div>
             <a id="see-more" class="projects__see-more" target="_blank" href="https://codepen.io/paolonif">See more
