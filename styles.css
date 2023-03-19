@@ -24,8 +24,8 @@
     
 }
 *::selection{
-    color: var(--black);
-    background-color: var(--aquamarine);
+    /* color: var(--black); */
+    background-color: var(--gray);
 }
 body{
     margin: 0;
@@ -406,9 +406,8 @@ body{
     max-width: 600px;
     margin: auto;
     z-index: 2;
-    padding: 1rem;
+    padding: 1rem 0;
 
-    /* margin-top: 5px; */
     overflow: hidden;
 }
 .projects__slider{
@@ -514,7 +513,12 @@ body{
 .projects__next-button{
     right: 0;
 }
-
+.projects__dot-container{
+    text-align:center;
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+}
 .projects__dot{
     cursor: pointer;
     height: 1rem;
@@ -584,14 +588,17 @@ body{
     text-align: center;
     padding-bottom: 10px; */
 } 
+.contact p{
+    padding: 1rem 0;
+    font-size: 0.5rem;
+}
+.contact p > span{
+    font-size: inherit;
+}
 
-.contact__freeCodeCamp{
+.contact__logo{
     z-index: 3;
     margin-right: 50px;
-}
-.contact__codepen{
-    z-index: 3;
-    margin-left: 50px;
 }
 
 /* FOOTER section and styles ends */
@@ -622,7 +629,10 @@ body{
     h3{
         font-size: 150%;
     }
-    .projects__project-tile{
+    .projects__container{
+        padding: 0;
+    }
+    .projects__slide{
         
         max-height: 100%;
         margin: auto;
@@ -635,9 +645,12 @@ body{
         height: auto;
     }
  
-    .projects__project-tile a{
+    .projects__slide a{
         width: 100%;
         margin: auto;
+    }
+    .projects__dot-container{
+        margin-bottom: 0.7rem;
     }
 
 
@@ -648,11 +661,8 @@ body{
     footer a, footer img {
         transform: scale(0.8);
     }
-    .contact__freeCodeCamp, .contact__freeCodeCamp img{
+    .contact__logo, .contact__logo img{
         margin-right: 0px;
-    }
-    .contact__codepen, .contact__codepen img{
-        margin-left: 0px;
     }
 }
 @media(max-width: 890px){
@@ -678,19 +688,20 @@ body{
     .projects__container{
         max-width: 80%;
     }
-    .projects__images, .projects__project-tile, .projects__image-caption{
+    .projects__slide{
         border-radius: 0.5rem;
     }
-    
 }
 @media (max-width: 500px){
     
     .projects__prev-button, .projects__next-button{
         top: calc(100% - 3rem);
+        margin: 0;
     }
     .projects__container{
         border-radius: 0px;
     }
+    
     .about-me__container{
         width: 80%;
         flex-flow: column;

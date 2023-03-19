@@ -160,8 +160,8 @@
             <button class="projects__next-button" onclick="plusSlides(1)">&#10095;</button>
             <br>
             <!-- The dots/circles -->
-            <ul style="text-align:center">
-                <li class="projects__dot" onclick="currentSlide(0)"></li>
+            <ul class="projects__dot-container">
+                <li class="projects__dot projects__active" onclick="currentSlide(0)"></li>
                 <li class="projects__dot" onclick="currentSlide(1)"></li>
                 <li class="projects__dot" onclick={currentSlide(2)}></li>
                 <li class="projects__dot" onclick="currentSlide(3)"></li>
@@ -178,12 +178,16 @@
 
     <footer id="contact" class="contact">
         <h2>Find me at</h2>
-        <a id="freecodecamp" class="contact__freecodecamp" target="_blank"
-            href="https://www.freecodecamp.org/paoloniFabricio"><img
+        <a id="freecodecamp" class="contact__logo" alt="freeCodeCamp logo" target="_blank" href="https://www.freecodecamp.org/paoloniFabricio"><img
                 src="https://design-style-guide.freecodecamp.org/downloads/fcc_primary_large.png" width="200px"></a>
-        <a id="codepen" class="contact__codepen" target="_blank" href="https://codepen.io/paolonif"><img
+        <a id="codepen" class="contact__logo" alt="codepen logo" target="_blank" href="https://codepen.io/paolonif"><img
                 src="https://res.cloudinary.com/css-tricks/images/f_auto,q_auto/v1642454945/codepen-wordmark-display-inside-white@10x_163987fcdd/codepen-wordmark-display-inside-white@10x_163987fcdd.png?_i=AA"
                 width="150px"></a>
+        <a id="linkedin" class="contact__logo" alt="linkedin logo" target="_blank" href="https://www.linkedin.com/in/fabriciopaoloni/">
+            <img src="./img/linkedin_logo.jpg" type="jpg" alt="linkedin logo" width="150px">
+        </a>
+        <p>Website made with HTML5, CSS3 and vanilla JS. &copy; Copyright <span id="current-year"></span>, Fabricio Paoloni</p>
+    
     </footer>
 
     <script src="./scrypt.js"></script>
