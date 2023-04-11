@@ -701,7 +701,13 @@ body{
     .projects__container{
         border-radius: 0px;
     }
-    
+    .projects__dot-container{
+        
+    }
+    .projects__dot{
+        width: 12px;
+        height: 12px;
+    }
     .about-me__container{
         width: 80%;
         flex-flow: column;
